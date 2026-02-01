@@ -1,15 +1,18 @@
-# Tumor Track 
+# Tumor Track
 
-A new Flutter project.
+An AI-assisted mobile healthcare platform that supports brain tumor and breast cancer assessment and care coordination. Patients can upload brain MRI and mammography images for AI-based analysis and receive preliminary, structured reports to support clinical decision-making. Doctors can review reports, communicate with patients, and issue electronic prescriptions, while pharmacists manage prescription fulfillment. The system also includes a drug–drug interaction checking feature to support safer medication workflows.
 
-## Getting Started
+## Key Features
+- Upload brain MRI and breast mammogram images for AI-assisted analysis (decision support)
+- Automatic generation of structured medical reports (with confidence scores)
+- Secure patient–doctor chat with optional file sharing (e.g., reports)
+- Drug–drug interaction checking for oncology medications and co-medications
+- E-prescription workflow: doctor issues prescriptions, patient selects a pharmacy, pharmacist fulfills
 
-AI-assisted mobile healthcare app for brain tumor & breast cancer assessment with image upload, report viewing, secure doctor chat, e-prescriptions, and drug–drug interaction checking.
-A few resources to get you started if this is your first Flutter project:
+## Tech Stack (High-level)
+- Flutter mobile app (cross-platform)
+- Django backend + REST APIs
+- Separate AI inference service (REST-based)
+- Rule-based drug interaction module
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+> Disclaimer: AI results are intended for decision support and do not replace professional medical diagnosis.
